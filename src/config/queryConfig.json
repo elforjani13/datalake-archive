@@ -1,0 +1,64 @@
+{
+    "url": "https:///graphql?query=",
+    "requireDataSource": true,
+    "requiredFields": [
+        {
+            "min": 1,
+            "fields": [
+                {
+                    "name": "mrn",
+                    "label": "MRN"
+                },
+                {
+                    "name": "healthCardNumber"
+                }
+            ]
+        },
+        {
+            "min": 3,
+            "fields": [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "lastName"
+                },
+                {
+                    "name": "dateOfBirth",
+                    "type": {
+                        "name": "Date"
+                    }
+                },
+                {
+                    "name": "sex",
+                    "type": {
+                        "enumValues": [
+                            {
+                                "name": "M"
+                            },
+                            {
+                                "name": "F"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "optionalFields": [
+        {
+            "name": "created",
+            "type": {
+                "name": "DateRange",
+                "fields": [
+                    {
+                        "name": "createdAfter"
+                    },
+                    {
+                        "name": "createdBefore"
+                    }
+                ]
+            }
+        }
+    ]
+}

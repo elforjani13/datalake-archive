@@ -1,0 +1,15 @@
+{
+    "bdmOrder": {
+        "label": "All Orders (All Visits)",
+        "id": [
+            "visitNumber",
+            "orderNumber"
+        ]
+    },
+    "bdmAllergy": {
+        "label": "Allergies",
+        "id": [
+            "description"
+        ]
+}
+}
